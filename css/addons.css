@@ -1,0 +1,14 @@
+/*!
+* Add-ons
+*/
+
+.picture img{
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    -webkit-border-radius: 115px;
+    -moz-border-radius: 115px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
