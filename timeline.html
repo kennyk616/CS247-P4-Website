@@ -217,16 +217,16 @@
 
                     <ol style="list-style-type: upper-latin;">
                         <li>TV is off.</li>
-                        <li>Mom walks infront of screen and kinect dectects her and tv turns on.</li>
-                        <li>Kinect does facial and body recognition.  It recognizes Mom and welcomes her.</li>
-                        <li>Knowing what shows Mom likes, the kinect-TV suggests shows that are currently playing that mom likes.  She has the option of Martha Stewart or CNN News. She can point left for Martha Stewart and right for CNN News.</li>
-                        <li>Mom Points right and the kinect changes the channel to CNN.</li>
+                        <li>Mom walks in front of screen, Kinect dectects her and TV turns on.</li>
+                        <li>Kinect does facial and body recognition. It recognizes Mom and welcomes her.</li>
+                        <li>Knowing what shows Mom likes, the Kinect-TV suggests shows that are currently playing that mom likes. She has the option of Martha Stewart or CNN News. She can point left for Martha Stewart and right for CNN News.</li>
+                        <li>Mom Points right and the Kinect changes the channel to CNN.</li>
                         <li>Mom watches the show for 30 minutes.</li>
-                        <li>Mom's show is done and the kinect-TV suggests next shows that are own that she might like.</li>
+                        <li>Mom's show is done and the Kinect-TV suggests next shows that are own that she might like.</li>
                         <li>As this happens her son comes into the room.</li>
-                        <li>The kinect-tv detects the son and mom are watching tv.</li>
-                        <li>The kinect-TV runs body and facial recognition on the subjects.</li>
-                        <li>The TV welcomes both mom and Son and gives suggestions for current shows that they both like to wath together.</li>
+                        <li>The Kinect-TV detects the son and mom are watching tv.</li>
+                        <li>The Kinect-TV runs body and facial recognition on the subjects.</li>
+                        <li>The TV welcomes both mom and son and gives suggestions for current shows that they both like to wath together.</li>
                         <li>Mom and son are happy.</li>
                     </ol>
                 </div>
@@ -277,7 +277,6 @@
                 </div>
             </div>
 
-            <br/><br/>
             <div class="row">
                 <div class="span6">
                     <h3>Sitting Gesture Feasibility Testing</h3>
@@ -300,6 +299,50 @@
                     </ul>
                 </div>
             </div>
+
+
+            <h3>Interactive TV</h3>
+
+            <p>An idea for the future of TV was the following: let's say there is a live concert on TV. Several cameras are filming it: one for the guitarist, one for the drummer, on for the audience, one for the stage, etc. What if it was possible to choose the camera we want to watch in real time?</p>
+            <p>The first question we could ask is: when would that possibility be appropriate? We could think of different application areas: concerts, sports, documentaries, TV reality shows.</p>
+            <p>The second is even more interesting here since it was actually possible to make a tangible prototype to find the answer: what is a good way to select camera views?</p>
+            <p>More generally, this question has a much larger scope: it is about the selection of almost any object on a screen. We could group those gestures in three categories:</p>
+            <ul>
+                <li>
+                    Pointer selection: the user has to point at the object he wants to select on the screen.
+                </li>
+                <li>
+                    Radial selection: the user makes a gesture towards the zone of the screen where the object he wants to select is.
+                </li>
+                <li>
+                    Drawing selection: if the objects have an index (a number or a letter for example), the user "draws" with his hand this number or letter.
+                </li>
+            </ul>
+            <p>The following videos show the three types of interaction.</p>
+            <div class="row">
+                <div class="span4">
+                    <iframe width="370" height="230" src="http://www.youtube.com/embed/64LdW3uf_WQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="span4">
+                    <iframe width="370" height="230" src="http://www.youtube.com/embed/W_YRnXwqOcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="span4">
+                    <iframe width="370" height="230" src="http://www.youtube.com/embed/JqHTqntNob0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>After testing those three prototypes, we could find the following insights:</p>
+            <ul>
+                <li>
+                    Pointer selection: this selection may be the more direct and natural, but there are (at least) a big flaw. The first one is that this pointer needs a kind of calibration: when the user points at something on the screen, there is little chance that the pointer actually falls exactly where he expected to: he may have to correct the position of his arm. This is particularly true if the items to select are in a tight vertical list.
+                </li>
+                <li>
+                    Radial selection: an obvious flaw that we could spot as soon as we tested this prototype is that you have to be on a decent sitting position to be able to select a zone of the screen. If you are lying on a side (let's say the right side), it will be very hard to direct your arm to the right. On the contrary, this selection method has a big advantage compared to the previous one: if the expanse of the gesture can be small, it would not only solve the problem of the posture but it may also be very easy to navigate into menus and sub-menus. Indeed, there is no need to calibrate anything since the only parameter that matters is the angle of your arm. Reaching a particular sub-menu could finally be like drawing a path that the user could learn subconciously. 
+                </li>
+                <li>
+                    Drawing selection: the two main advantages of this method is that the user can be in any position, and that it is not tiring since the expanse of the gesture is small. This gesture seems to be great for direct selections. However, contrarily to the previous one, it may be very costly to navigate into sub-menus. Indeed, the user may have to do a "complex" gesture at each step of his progress: he may have to draw the index of each sub-menu. On the contrary, the previous one allowed the user to reach a particular sub-menu in a continuous gesture.
+                </li>
+            </ul>
+
         </section>
 
         <!-- Week 6
