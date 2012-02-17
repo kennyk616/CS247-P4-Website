@@ -437,7 +437,7 @@
                 <h1>Week 6 <small>Milestone 3: Wizard-of-Oz Testing</small></h1>
             </div>
             
-            <h3>Wizard of Oz 1 - Grid</h3>
+            <h3>Wizard of Oz 1 - Grid navigation</h3>
             <div class="row">
                 <div class="span8 columns">
                     <h4>Use case</h4>
@@ -476,6 +476,10 @@
                         <li class="span4">
                             <a href="img/original images/woz-grid-menu-2.jpg" class="thumbnail" target='_blank'>
                                 <img src="img/thumbnail images/woz-grid-menu-2.jpg"></img>
+						</li>
+                        <li class="span4">   
+							<a href="img/original images/woz1-photo.jpg" class="thumbnail" target='_blank'>
+                                <img src="img/thumbnail images/woz1-photo.jpg"></img>
                             </a>
                         </li>
                     </ul>
@@ -485,22 +489,40 @@
                 </div>
             </div>
             
-            <h3>Wizard of Oz 2 - Radial menu</h3>
+            <h3>Wizard of Oz 2 - Radial menu navigation</h3>
             <div class="row">
                 <div class="span8 columns">
                     <h4>Use case</h4>
-                    <p>blah blah.</p>
+                    <p>Our second gestural navigation prototype was the radial menu. We hypothesized that there can be about 6 different shows going on at a given time in cable TV. Therefore recommendations were a core part of this system. Manually entering a station name/number was left as a last resort.</p>
+                    <p>When the user waves at the screen, the first menu they see is the top 6 shows the system thinks s/he would be interested in. We haven't actually worked on the recommendation algorithm but we thought it was reasonable that based on past habits and a taste profile we could identify the top shows that are on right now for the user. If these top 6 suggestions were not adequate though, the user can navigate to more specific categories and genres for further recommendations.</p>
+                    <p>We had one design for the interface but we tested two different interaction methods with it:
+                    <ul>
+                    <li>The first UX method used a grab&select approach. To select an item or jump to a sub-category in a list the user could point at it with their open hand, then close their hand and pull it back to themselves. Similarly, to go back from a sub-category to a parent category the user could first close their hand (grasp) and then push back towards the screen.</li>
+                    <li>The second method involed a free-moving viewport based on the user's motions. In this one, once the menu showed up, the path that the user takes with their arm would be replicated as the path that the viewport takes on the radial structure on the screen. This way, without the extra steps for selecting items, the user could simply skip to a leaf of the tree in one smooth motion, if they had internalized the gesture.</li>
+                    </ul>
+
+                    </p>
                     <h4>Lessons Learned</h4>
-                    <p>Blah blah blah.</p>
+                    <p>The first piece of feedback we got was that this menu paradigm was preferable to the grid menu in a variety of ways. Its interaction was more predictable–moving around in a tree was a reasonable metaphor for the CS students that we tested with–and simpler.</p>
+                    <p>We tried to test with our subjects with little to no instruction, and this gave us some very interesting results. Subjects tried to flick, pinch or even rotate the interface with gestures that are already familiar to them from touch screens or trackpads. We realized we could incorporate some other gestures such as a go back to root gesture (pushing the screen away with both hands). 
+                    </p>
                 </div>
                 <div class="span4">
                     <ul class="thumbnails">
-                        <li class="span4">
+                        <li class="span2">
                             <a href="img/original images/woz-radial-menu.jpg" class="thumbnail" target='_blank'>
                                 <img src="img/thumbnail images/woz-radial-menu.jpg"></img>
                             </a>
                         </li>
+                        <li class="span2">
+                            <a href="img/original images/woz2-photo.jpg" class="thumbnail" target='_blank'>
+                                <img src="img/thumbnail images/woz2-photo.jpg"></img>
+                            </a>
+                        </li>
                     </ul>
+                    <a class="btn btn-primary" href="download/woz-radial-menu.zip">
+                        Download full size
+                    </a>
                 </div>
             </div>
             
