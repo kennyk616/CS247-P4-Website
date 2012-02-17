@@ -436,47 +436,48 @@
             <div class="page-header">
                 <h1>Week 6 <small>Milestone 3: Wizard-of-Oz Testing</small></h1>
             </div>
-            
+
             <h3>Wizard of Oz 1 - Grid navigation</h3>
             <div class="row">
                 <div class="span8 columns">
                     <h4>Use case</h4>
-					Gestures:
-					<ul>
-						<li><b>Highlight:</b> extend your arm toward your target and adjust arm as needed. The highlight-box will move accordingly</li>
-						<li><b>Select:</b> pull hand from wherever it was to chest.</li>
-						<li><b>Back:</b> move hand in a circle-motion (either clockwise or counter-clockwise) </li>
-						<li><b>Home:</b> wave hand at least 3 times</li>
-						</ul>
-					Instructions:
-					<ol>
-						<li>Select Glee //one of the 6 recommendations</li>
-						<li>Go back to recs //quit full screen</li>
-						<li>Browse all //goes to all categories</li>
-						<li>Select a sci-fi movie //somewhat-buried show</li>
-						<li>go back to selection menu //quit full screen</li>
-						<li>select a “The Ring” //... another movie in another selection.</li>
-						<li>go home </li>
-					</ol>
-                    <p>We wanted the TV to show the top 6 recommendations for the user. If the user doesn't like the suggestions, he/she can go to "view all", and select the TV shows based that are listed by categories. The flow is shown both from the above insturctions and in the powerpoint document.</p>
-					
+                    Gestures:
+                    <ul>
+                        <li><b>Highlight:</b> extend your arm toward your target and adjust arm as needed. The highlight-box will move accordingly</li>
+                        <li><b>Select:</b> pull hand from wherever it was to chest.</li>
+                        <li><b>Back:</b> move hand in a circle-motion (either clockwise or counter-clockwise) </li>
+                        <li><b>Home:</b> wave hand at least 3 times</li>
+                    </ul>
+                    Instructions:
+                    <ol>
+                        <li>Select Glee //one of the 6 recommendations</li>
+                        <li>Go back to recs //quit full screen</li>
+                        <li>Browse all //goes to all categories</li>
+                        <li>Select a sci-fi movie //somewhat-buried show</li>
+                        <li>Go back to selection menu //quit full screen</li>
+                        <li>Select a “The Ring” //... another movie in another selection.</li>
+                        <li>Go home </li>
+                    </ol>
+                    <p>We wanted the TV to show the top 6 recommendations for the user. If the user doesn't like the suggestions, he/she can go to "view all", and select the TV shows based that are listed by categories. The flow is shown both from the above insturctions and in the powerpoint document. One of the reasons we decided to go with this design was that it supports browsing a whole library of shows. This can be applicable to the on-demand "smart" TVs such as Google TV, Apple TV, and the traditional TVs that only allows the user to watch it in real-time.</p>
+
                     <h4>Lessons Learned</h4>
                     <p>Blah blah blah.</p>
                 </div>
                 <div class="span4">
                     <ul class="thumbnails">
-						<li class="span4">
+                        <li class="span4">   
+                            <a href="img/original images/woz1-photo.jpg" class="thumbnail" target='_blank'>
+                                <img src="img/thumbnail images/woz1-photo.jpg"></img>
+                            </a>
+                        </li>
+                        <li class="span2">
                             <a href="img/original images/woz-grid-menu-1.jpg" class="thumbnail" target='_blank'>
                                 <img src="img/thumbnail images/woz-grid-menu-1.jpg"></img>
                             </a>
                         </li>
-                        <li class="span4">
+                        <li class="span2">
                             <a href="img/original images/woz-grid-menu-2.jpg" class="thumbnail" target='_blank'>
                                 <img src="img/thumbnail images/woz-grid-menu-2.jpg"></img>
-						</li>
-                        <li class="span4">   
-							<a href="img/original images/woz1-photo.jpg" class="thumbnail" target='_blank'>
-                                <img src="img/thumbnail images/woz1-photo.jpg"></img>
                             </a>
                         </li>
                     </ul>
@@ -485,7 +486,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <h3>Wizard of Oz 2 - Radial menu navigation</h3>
             <div class="row">
                 <div class="span8 columns">
@@ -493,10 +494,10 @@
                     <p>Our second gestural navigation prototype was the radial menu. We hypothesized that there can be about 6 different shows going on at a given time in cable TV. Therefore recommendations were a core part of this system. Manually entering a station name/number was left as a last resort.</p>
                     <p>When the user waves at the screen, the first menu they see is the top 6 shows the system thinks s/he would be interested in. We haven't actually worked on the recommendation algorithm but we thought it was reasonable that based on past habits and a taste profile we could identify the top shows that are on right now for the user. If these top 6 suggestions were not adequate though, the user can navigate to more specific categories and genres for further recommendations.</p>
                     <p>We had one design for the interface but we tested two different interaction methods with it:
-                    <ul>
-                    <li>The first UX method used a grab&select approach. To select an item or jump to a sub-category in a list the user could point at it with their open hand, then close their hand and pull it back to themselves. Similarly, to go back from a sub-category to a parent category the user could first close their hand (grasp) and then push back towards the screen.</li>
-                    <li>The second method involed a free-moving viewport based on the user's motions. In this one, once the menu showed up, the path that the user takes with their arm would be replicated as the path that the viewport takes on the radial structure on the screen. This way, without the extra steps for selecting items, the user could simply skip to a leaf of the tree in one smooth motion, if they had internalized the gesture.</li>
-                    </ul>
+                        <ul>
+                            <li>The first UX method used a grab&select approach. To select an item or jump to a sub-category in a list the user could point at it with their open hand, then close their hand and pull it back to themselves. Similarly, to go back from a sub-category to a parent category the user could first close their hand (grasp) and then push back towards the screen.</li>
+                            <li>The second method involed a free-moving viewport based on the user's motions. In this one, once the menu showed up, the path that the user takes with their arm would be replicated as the path that the viewport takes on the radial structure on the screen. This way, without the extra steps for selecting items, the user could simply skip to a leaf of the tree in one smooth motion, if they had internalized the gesture.</li>
+                        </ul>
 
                     </p>
                     <h4>Lessons Learned</h4>
@@ -507,13 +508,18 @@
                 <div class="span4">
                     <ul class="thumbnails">
                         <li class="span2">
-                            <a href="img/original images/woz-radial-menu.jpg" class="thumbnail" target='_blank'>
-                                <img src="img/thumbnail images/woz-radial-menu.jpg"></img>
+                            <a href="img/original images/woz2-sketch.jpg" class="thumbnail" target='_blank'>
+                                <img src="img/thumbnail images/woz2-sketch.jpg"></img>
                             </a>
                         </li>
                         <li class="span2">
                             <a href="img/original images/woz2-photo.jpg" class="thumbnail" target='_blank'>
                                 <img src="img/thumbnail images/woz2-photo.jpg"></img>
+                            </a>
+                        </li>
+                        <li class="span4">
+                            <a href="img/original images/woz-radial-menu.jpg" class="thumbnail" target='_blank'>
+                                <img src="img/thumbnail images/woz-radial-menu.jpg"></img>
                             </a>
                         </li>
                     </ul>
@@ -522,7 +528,7 @@
                     </a>
                 </div>
             </div>
-            
+
         </section>
 
         <!-- Week 7
