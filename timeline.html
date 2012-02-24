@@ -561,42 +561,20 @@
         </div>
         
         <h3>Feature choices</h3>
-        Main goal: make the experience of the user as natural as possible without a lot of tiring gestures. Based on 
-		observations of what people consciously or subconsciously do to interact with the TV before or after a particular 
-		action, such as answering the phone, getting up to grab a drink, etc. Our goal is to make the Kinect interpret
-		these actions naturally so that the user does not need to do any extra gestures or motions.
+        Main goal: make the experience of the user as natural as possible without a lot of tiring gestures. Based on observations of what people consciously or subconsciously do to interact with the TV before or after a particular action, such as answering the phone, getting up to grab a drink, etc. Our goal is to make the Kinect interpret these actions naturally so that the user does not need to do any extra gestures or motions.
         <h4>Turn on TV</h4>
         <ol>
                 <li>
-                    Sit back and wave. Originally, we prototyped such that the TV turns on and plays whenever the user sits
-					down. However, after incorporating Jeff's feedback on Wednesday, we realized that people may not always
-					want to watvh TV when they are sitting in the living room. We then decided to add in the waving motion
-					for the TV to turn on. The waving motion aligns with our goal that is does not add too much hassle on the
-					user's part, but also eliminates false positives as it is not a commonly used gesture.                </li>
+                    Sit back and wave. Originally, we prototyped such that the TV turns on and plays whenever the user sits down. However, after incorporating Jeff's feedback on Wednesday, we realized that people may not always want to watvh TV when they are sitting in the living room. We then decided to add in the waving motion for the TV to turn on. The waving motion aligns with our goal that is does not add too much hassle on the user's part, but also eliminates false positives as it is not a commonly used gesture.                </li>
                 <li>
                     The show that is playing can be one of the following:
                     <ul>
-                        <li>The last show you were watching but haven't finished yet. We can envision a scenario where the 
-						user leaves the TV for a meeting. When the user returns, he/she would want to continue where he/she
-						left off from the show.</li>
-                        <li>A channel which one or several of your friends are watching. Akthough there are various possible
-						recommendation systems, and we picked this one because of the following reasons. First, we believe
-						that the world getting more and more connected. As we see from Facebook and other online media sources,
-						people are more interested in reading an article, listening to a song that their friends are listening
-						to. As a result, picking a channel that your friends are watching can yield a high match between
-						what you are interested in and what we recommend. Second, we want to incorporate social interaction 
-						for the user while watching the TV. By watching the same TV channel and show, as demonstrated by our
-						prototype, the user can see his friend (in our case, Jeff) laugh at a particular moment of the show.
-						This promotes social interaction and creates the atmosphere as if the user is watching the show or
-						movie with his friends.</li>
+                        <li>The last show you were watching but haven't finished yet. We can envision a scenario where the user leaves the TV for a meeting. When the user returns, he/she would want to continue where he/she left off from the show.</li>
+                        <li>A channel which one or several of your friends are watching. Akthough there are various possible recommendation systems, and we picked this one because of the following reasons. First, we believe that the world getting more and more connected. As we see from Facebook and other online media sources, people are more interested in reading an article, listening to a song that their friends are listening to. As a result, picking a channel that your friends are watching can yield a high match between what you are interested in and what we recommend. Second, we want to incorporate social interaction for the user while watching the TV. By watching the same TV channel and show, as demonstrated by our prototype, the user can see his friend (in our case, Jeff) laugh at a particular moment of the show. This promotes social interaction and creates the atmosphere as if the user is watching the show or movie with his friends.</li>
 					</ul>
                 </li>
                 <li>
-                    Based on the feedback from Jeff, we realized that even with the best artificial intelligence technique
-					in recommending the shows to the users, we should still enable an override mechanism so that the user
-					can manually decide what he/she wants to watch. We have decided that with a flick, the user can change
-					from resuming an old show to watching another show with a friend, or switching between different friends.
-					The same gesture will also enable the user to go into the traditional TV mode and select a channel manually.</li>
+                    Based on the feedback from Jeff, we realized that even with the best artificial intelligence technique in recommending the shows to the users, we should still enable an override mechanism so that the user can manually decide what he/she wants to watch. We have decided that with a flick, the user can change from resuming an old show to watching another show with a friend, or switching between different friends. The same gesture will also enable the user to go into the traditional TV mode and select a channel manually.</li>
         </ol>
         <h4>Pause the show</h4>
 		<p> In our prototype, the show pauses when the user stands up from his seat. However, after feedback during our Wednesday's prototype demo, we realized that sometimes users may not want to pause the TV whenever they get up. They may wish to keep the TV on playing mode. We have thus decided to incorporate audio input, so that the user can say "I'll be right back", or "pause the show" for the show to pause. This again matches our philosphy of only requiring the user to do something natural and not needing the user to go out of his/her way to perform any tasks.</p> 
@@ -635,7 +613,7 @@
         <p>The main remaining issue is the integration of the social interactions. This is a part we are currently working on. There are several options, that mainly depend on the kind of TV we are watching.</p>
         <p>For cable TV, the interaction would be real time: people are watching a show live and their interactions are transcribed on the screen at the moment they are doing them. This solution has several issues. First, how to manage pausing when people are standing? For instance, we could have a default behavior that would not pause the show <em>unless</em> the person who is standing (to go to the toilets, to grab something to drink) says an audio cue like "please wait for me", which is something that people are already doing when they are watching TV in group (in the same room). Talking about groups, this solution would in fact imply that people forming a virtual group on purpose in order to watch TV together. Indeed, if this was not the case, people could be bothered if someone joins their channel and starts pausing at every moment whereas he didn't want to be disturbed. An other solution could be to override the pause in order to start asynchronous watching, which leads us to the second solution.</p>
         <p>The other solution would work for VOD: people are not watching the show at same time but all their comments/interatcions are recorded. Then, when someone watches the same show (but it can be even 2 weeks later), those interactions/reactions could displayed in a corner of the screen, to give the impression that you are watching the show with one of your friend. This solution gives much more liberty in what it is possible to do, but on the other hand, it loses an important part of the social aspect of TV: I am happy to watch something when I know that someone else is watching it exactly at the same time even in a different place (think of the SuperBall: I know I can talk about that at work the day after, etc.), but this feeling is weakened if I know the person is not watching it at the same time.</p>
-        <p>To determine what's best, we intend to make another round of observations of people watching TV in group. If we choose the live cable TV solution, maybe it would be even better to include audio so that people can comment and make jokes even more naturally</p>
+        <p>To determine what's best, we intend to make another round of observations of people watching TV in group. If we choose the live cable TV solution, maybe it would be even better to include audio so that people can comment and make jokes even more naturally. On the other hand maybe a well thought asynchronous social interaction would fulfill the social needs or urges of people when they are watching TV.</p>
     </section>
 
     <!-- Week 8
