@@ -588,25 +588,51 @@
 						for the user while watching the TV. By watching the same TV channel and show, as demonstrated by our
 						prototype, the user can see his friend (in our case, Jeff) laugh at a particular moment of the show.
 						This promotes social interaction and creates the atmosphere as if the user is watching the show or
-						movie with his friends.
+						movie with his friends.</li>
 					</ul>
                 </li>
                 <li>
-                    you can then flick to change from resuming an old show to watching with a current friend or watching with a different friend
-                </li>
+                    Based on the feedback from Jeff, we realized that even with the best artificial intelligence technique
+					in recommending the shows to the users, we should still enable an override mechanism so that the user
+					can manually decide what he/she wants to watch. We have decided that with a flick, the user can change
+					from resuming an old show to watching another show with a friend, or switching between different friends.
+					The same gesture will also enable the user to go into the traditional TV mode and select a channel manually.</li>
         </ol>
-        
-        <h4>Pause and/or switch off: stand up</h4>
-        <p>Stand up and leaves: pause (could be backed by audio cue "I'll be right back": this is natural, this is what someone would say if he is watching with people). If the user is not here for a long time (or audio cue like "Bye"), switch off TV</p>
+        <h4>Pause the show</h4>
+		<p> In our prototype, the show pauses when the user stands up from his seat. However, after feedback during our Wednesday's prototype demo, we realized that sometimes users may not want to pause the TV whenever they get up. They may wish to keep the TV on playing mode. We have thus decided to incorporate audio input, so that the user can say "I'll be right back", or "pause the show" for the show to pause. This again matches our philosphy of only requiring the user to do something natural and not needing the user to go out of his/her way to perform any tasks.</p> 
+		<h4>Turn off the TV</h4>
+		<p>We will keep track of a particular time (for example, 15 minutes), and if the user stands up and leaves the screen for over that particular time, the show shuts down. This again makes it very natural for the user, and allows the kinect TV to actively interpret the users' actions instead of requiring the user to go out of his/her way to interact with the TV.
+		</p>
         
         <h4>Answering the phone</h4>
-        <p>If a user gets a call, we would likely turn off the volume or pause the program. We can easily detect the fact that his hand is close to his head, backed by the audio cue "hello"</p>
+        <p>If a user gets a call, we would likely turn off the volume or pause the program. In our prototype, we have built the detector for when the user has one hand close to his head. We can then add in the audio detection, so when the user says "hello" or constantly talks with one of his hand on his head, we can then lower the volume of the show or pause the show.</p>
         
-        <h4>Appendix: social TV</h4>
-        <p>describe how the laughs, comments (WTF, etc) would work and what they would be useful for (social value of TV: I am pleased to watch something at the same time as my friends)</p>
+        <h4>Social TV experience</h4>
+	<p>In our prototype, we hardcoded the social experience where the user can see his/her friend's reaction during a particular part of the show. In our case, when we get to a particular part of the show, we see a small note on the TV that shows that Jeff laughed "Hahahahahahaha" during that part. We think that not only are people more likely to enjoy the TV shows that their friends are watching, they may also be pleased to watch something at the same time as their friends. As we live in the modern world, it is often times hard to get together with friends to meet up, especially if we live far away. However, through the social TV experience, we can have people watch the same TV show together, and it will be just like everyone watching the TV in the same room, with the same laughter, and the same type of jokes people might make when watching a TV show together.
+	</p>
         
         <h3>Implementation Progress</h3>
-        Everything? (I don't know how the audio is going)
+		
+		<ul>
+			<li>When the user sits down, the TV turns on and plays the show recommended to the user.
+			</li>
+			
+			<li> When the user stands up, the TV show pauses.
+			</li>
+
+			<li> When the user leaves the scope of the kinect camera for a certain amount of time, the TV shuts down.
+			</li>
+
+			<li> When the user watches the show, he/she can see the parts where his friend, Jeff, makes a comment or laughs (hard-coded).
+			</li>
+			
+			<li> When the user puts his hand on his head, the TV detects that the user may be talking on the phone and displays that on the screen (no subsequent action yet).
+			</li>
+			
+			<li> <b>Audio?</b>
+			</li>
+			
+			</ul>
         
         <h3>Remaining implementation and design issues</h3>
         Depends on the previous section
